@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- FOR DROPDOWN TO WORK -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+
+    <title>Character</title>
+    <script src="vehicles.js"></script>
+    <link href="../allPagesStyle.css" rel="stylesheet">
+</head>
+
+<body >
+
+      <!-- UPPER SEARCH BAR -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container text-center ">
+          <!-- <a class="navbar-brand  nav-underline fw-bold" href="index.html">ABOUT</a> -->
+          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+
+              <li class="nav-item fw-bold" >
+                <a class="nav-link" href="../Home_Page/about.html">ABOUT</a>
+              </li>
+              <li class="nav-item fw-bold" >
+                <a class="nav-link" href="../characters/characters.html" target="_blank">CHARACTERS</a>
+              </li>
+              <li class="nav-item fw-bold">
+                <a class="nav-link" href="../Planets/planets.html" target="_blank">PLANETS</a>
+              </li>
+              <li class="nav-item fw-bold" >
+                <a class="nav-link" href="../Species/species.html" target="_blank">SPECIES</a>
+              </li>
+              <li class="nav-item fw-bold" >
+                <a class="nav-link" href="../Droids/droids.html" target="_blank">DROIDS</a>
+              </li>
+              <li class="nav-item fw-bold" >
+                <a class="nav-link" href="vehicles.html">VEHICLES</a>
+              </li>
+            </ul>
+            <form autocomplete="off"   class="d-flex justify-content-center " role="search">
+              <input class="form-control me-2" autocomplete="off"   list="json-datalist" type="text" placeholder="Search character" id="searchBox">
+              <datalist id="json-datalist"></datalist>
+              
+              <button class="bg-transparent border-0" type="submit" id="searchButton"><img src="..\Images\magnifying-glass-solid.svg" alt="Bootstrap" width="30" height="24"></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <p class="text-center p-title">EXPLORING THE ICONIC VEHICLES OF THE STAR WARS UNIVERSE</p>
+
+      <!-- DETAILS -->
+      <div class="container mb-3" style="max-width: 80%;" id="cardContainer">
+        <!-- <div class="row g-0">
+          <div class="col-md-4">
+            <img src="..." class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+
+      <!-- PAGINATION -->
+      <div class="pagination">
+        <!-- <img src="../Images/backward-solid.svg"  class="page" id="next"> -->
+        <div class="page disabled " id="prev"><<</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next">>></div>
+        <!-- <img src="../Images/forward-solid.svg"  class="page" id="next"> -->
+    </div>
+      <div class="footer"></div>
+      
+</body>
+</html>
